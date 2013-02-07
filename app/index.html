@@ -12,6 +12,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/vendor/modernizr.min.js"></script>
   </head>
@@ -21,11 +22,18 @@
       <h1>Farset Labs: Door</h1>
     </header>
 
-    <section class="status">
+    <section class="status status-closed">
       <p>The door is currently <span class="door-status">closed</span>.</p>
     </section>
 
-    <section class="open">
+    <section class="status status-open">
+      <p>
+        The door is currently <span class="door-status">open</span>.
+        There should be someone inside who can let you in.
+      </p>
+    </section>
+
+    <section class="access-form">
       <form>
         <div class="field">
           <label>Username</label>
@@ -44,7 +52,7 @@
     <footer>
       <p>
         The code for this is
-        <a href="https://github.com/cobyism/farsetlabs-door">available on GitHub</a>.
+        <a href="https://github.com/cobyism/farsetlabs-door">open-source on GitHub</a>.
         Contributions and bug reports (no matter how small) are completely welcome.
       </p>
     </footer>
