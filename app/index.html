@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/vendor/modernizr.min.js"></script>
   </head>
-  <body class="space-is-open">
+  <body class="checking" data-base-url="http://unit1.farsetlabs.org.uk/spaceapi">
 
     <section class="door-status">
       <p>Farset Labs is</p>
       <div class="status content-open">Open</div>
       <div class="status content-closed">Closed</div>
+      <div class="status content-checking">…</div>
     </section>
 
     <section class="message">
@@ -33,6 +34,7 @@
         Looks like you’re the only one here right now!
         Open the door with your username and password below.
       </span>
+      <span class="content-checking">Checking now…</span>
     </section>
 
     <section class="access-form">
@@ -50,6 +52,8 @@
         </div>
       </form>
     </section>
+
+    <div class="ajax-data"></div>
 
     <footer>
       <p>
