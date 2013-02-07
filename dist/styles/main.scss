@@ -9,7 +9,7 @@
 }
 
 $farset-purple: #353895;
-$farset-green: 9acc3c;
+$farset-green: #9acc3c;
 
 * {
   -wekbit-box-sizing: border-box;
@@ -22,7 +22,7 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  color: darken($farset-purple, 30%);
+  color: darken($farset-purple, 20%);
 }
 
 header, section, footer {
@@ -36,6 +36,15 @@ h1, h2, h3 {
   font-weight: normal;
 }
 
+a {
+  color: lighten(saturate($farset-purple, 20%), 20%);
+  text-decoration: none;
+}
+
+body {
+  border-top: 3px solid $farset-green;
+}
+
 header {
   background: $farset-purple;
   color: lighten($farset-purple, 40%);
@@ -44,3 +53,34 @@ header {
     font-weight: 300;
   }
 }
+
+/* Door status */
+
+.status {
+  .door-status {
+    padding: 0 .25em;
+    border-radius: 3px;
+  }
+}
+
+.status-closed .door-status {
+  background: #c00;
+  color: #fff;
+}
+
+.status-open .door-status {
+  background: $farset-green;
+  color: #fff;
+}
+
+/* Footer */
+
+footer {
+  font-size: 14px;
+  p {
+    border-top: 1px solid #ddd;
+    padding: 1em 0;
+  }
+}
+
+
