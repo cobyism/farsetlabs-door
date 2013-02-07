@@ -1,0 +1,3 @@
+[submodule "app/shapeshifter"]
+	path = app/shapeshifter
+	url = https://github.com/cobyism/shapeshifter.git
