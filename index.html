@@ -13,15 +13,16 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/caa4d2e6.main.css">
+    <link rel="stylesheet" href="styles/3830238c.main.css">
     <script src="scripts/vendor/cf69c6f2.modernizr.min.js"></script>
   </head>
-  <body class="space-is-open">
+  <body class="checking" data-base-url="http://unit1.farsetlabs.org.uk/spaceapi">
 
     <section class="door-status">
       <p>Farset Labs is</p>
       <div class="status content-open">Open</div>
       <div class="status content-closed">Closed</div>
+      <div class="status content-checking">…</div>
     </section>
 
     <section class="message">
@@ -33,6 +34,7 @@
         Looks like you’re the only one here right now!
         Open the door with your username and password below.
       </span>
+      <span class="content-checking">Checking now…</span>
     </section>
 
     <section class="access-form">
@@ -50,6 +52,8 @@
         </div>
       </form>
     </section>
+
+    <div class="ajax-data"></div>
 
     <footer>
       <p>
@@ -76,7 +80,7 @@
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 
-    <script src="scripts/ee0ed12d.main.js"></script>
+    <script src="scripts/73c1f931.main.js"></script>
 
     <script src="scripts/8ab52a5b.plugins.js"></script>
   </body>

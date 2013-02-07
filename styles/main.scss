@@ -71,6 +71,11 @@ a {
   color: #fff;
 }
 
+.status.content-checking {
+  background: #aaa;
+  color: #666;
+}
+
 /* Welcome message */
 
 .message {
@@ -125,7 +130,6 @@ a {
     color: lighten($color, 50%);
     text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     text-transform: uppercase;
-    font-weight: 300;
     margin: .5em 0;
     cursor: pointer;
     &:hover {
@@ -151,12 +155,15 @@ footer {
 
 /* Hide/show the right content */
 
-.space-is-open .content-closed {
+.space-is-open .content-closed,
+.space-is-closed .content-open,
+.checking .content-closed,
+.checking .content-open {
   display: none;
 }
 
-.space-is-closed .content-open {
-  display: none;
+.space-is-open, .space-is-closed {
+  .content-checking {
+    display: none;
+  }
 }
-
-
